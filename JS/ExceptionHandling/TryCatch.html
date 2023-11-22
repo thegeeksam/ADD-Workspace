@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Try...Catch</title>
+    <link rel="stylesheet" href="MyStyle.css">
+</head>
+
+<body>
+    <script>
+        try {
+            //a is an array of elements
+            let a = ["34", "32", "5", "31", "24", "44", "67"];
+            // displays elements of a 
+            document.write(a);
+            
+            //b is undefined but still trying to fetch its value. 
+            //catch block will be invoked    
+            document.write(b); 
+        } 
+        //Handling error 
+        catch (e) {
+            // An error object has two properties:
+            // name and message
+            document.write("<br>" + "Name of Error occurred is: " + e.name + "<br>");
+            // alert("There is error which shows \"" + e.message + "\"" + " in the program"); 
+            document.write("There is error which shows \"" + e.message + "\"" + " in the program"); 
+        }  
+    </script>
+</body>
+
+</html>

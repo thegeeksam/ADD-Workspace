@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>HTML Forms</title>
+    </head>  
+    <body>
+        <h1>I CSE 'B'</h1>
+        <form action="Result.html" method="GET" enctype="multipart/form-data">
+            <div>
+                <label for="name"> Name: </label>
+                <input type ="text" name ="Name:" id="name">
+            </div>
+            <div>
+                <label for="age"> age: </label>
+                <input type="number" name="Age:" id ="age" min="18" max="120" step="1">
+            </div>
+            <div>
+                <label for="password"> Password: </label>
+                <input type="password" name="Password:" id="password" minlength="8">
+            </div>
+            <div>
+                <label for="dob"> Birth Day: </label>
+                <input type="date" name="BirthDay:" id="dob" max = "2005-01-01">
+            </div>
+            <div>
+                <label for="pincode"> Pincode: </label>
+                <input type="number" name="Pincode:" id="pincode" maxlength="6" maxlength="6" placeholder="eg: 641202" required>
+            </div>
+            <div>
+                <label for="RollNumber"> RNumber: </label>
+                <input type="text" name="RollNumber:" id="RollNumber" maxlength="7" value="20CS" required>
+            </div>
+            <div>
+                <label for="email"> EMail: </label>
+                <input type="email" name="EMail:" id="email" required>
+            </div>
+            <b>Food:</b>
+            <div>
+                <label for="Pongal"> Pongal: </label>
+                <input type="checkbox" name="Pongal:" id="Pongal">
+            </div>
+            <div>
+                <label for="Idly"> Idly: </label>
+                <input type="checkbox" name="Idly:" id="Idly">
+            </div>
+            <div>
+                <label for="Vadai"> Vadai: </label>
+                <input type="checkbox" name="Vadai:" id="Vadai">
+            </div>
+            <div>
+                <label for="Egg"> Egg Biriani: </label>
+                <input type="checkbox" name="Egg:" id="Egg">
+            </div>
+            </div>
+            <b>Food Preference:</b>
+            <div>
+                <label for="veg"> Veg: </label>
+                <input type="radio" name="Veg:" id="veg">
+            </div>
+            <div>
+                <label for="nveg"> Non-Veg: </label>
+                <input type="radio" name="Veg:" id="nveg">
+            </div>
+            <div>
+                <label for="country">Countries Visited:</label>
+                <select name="Country" id="country" multiple>
+                    <option value="India">India</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="SriLanka">SriLanka</option>
+                    <option value="Bhutan">Bhutan</option>
+                </select>
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                    <option selected disabled>--Select City--</option>
+                    <optgroup label="Metros">
+                        <option>New Delhi</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                        <option>Chennai</option>
+                        <option>Kathmandu</option>
+                    </optgroup>
+                    <optgroup label="Other Cities">
+                        <option>Coimbatore</option>
+                        <option>Pollachi</option>
+                        <option>Udumalai</option>
+                        <option>Tiruppur</option>
+                    </optgroup>
+                </select>
+            <b></b>
+            <div>
+                <label for="addr"> Address: </label>
+                <textarea name="Address:" id="addr" cols="15" 
+                    rows="5" placeholder="Enter Your Address"></textarea>
+            </div>
+
+            <div>
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="File" 
+                            accept=".pdf">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+
+            <button type="submit">Submit</button>
+            </div>
+            <button type = "reset">Reset</button>
+        </form>
+    </body>          
+</html>

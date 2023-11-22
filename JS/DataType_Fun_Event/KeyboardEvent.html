@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Keyboard Event Example</title>
+</head>
+<body>
+<div class="main">
+    <div class="box" id="box1">
+        <p id="message"></p>
+        <p>Press any key inside the input field</p>
+        <label for="inputField">Type something:</label>
+        <input type="text" id="inputField" onkeydown="myFunction()">
+    </div>
+</div>
+
+<script>
+    var count = 0;
+    function myFunction() {
+        count++;
+        var box = document.getElementById("box1");
+        box.style.background = 'linear-gradient(45deg, red, blue)';
+        box.style.color = 'white';
+        document.getElementById("message").innerHTML = "The KeyDown Event is triggered " + count + " times.";
+    }   
+</script>
+</body>
+</html>

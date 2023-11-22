@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Form Element</title>
+</head>
+
+<body>
+    <form action="mailto:sampathkumar.s@sece.ac.in" method="post">
+        <table class="table">
+            <tr>
+                <td>
+                    <label for="firstName">First Name</label>
+                </td>
+                <td>
+                    <input type="text" name="firstName" id="firstName" required="required" maxlength="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastName">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" name="lastName" id="lastName" required="required" maxlength="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" maxlength="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="pass" minlength="8" maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="contact">Contact Number</label>
+                </td>
+                <td>
+                    <input type="tel" name="phone" id="contact" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Age</label>
+                </td>
+                <td>
+                    <input type="number" name="age" id="age" maxlength="3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="image">Image</label>
+                </td>
+                <td>
+                    <input type="file" name="uploadImage" id="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male" id="gender">Male
+                    <input type="radio" name="gender" value="female" id="gender" >Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Course</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="course" value="HTML" id="course">HTML
+                    <input type="checkbox" name="course" value="CSS" id="course">CSS
+                    <input type="checkbox" name="course" value="PHP"id="course">PHP
+                    <input type="checkbox" name="course" value="Java Script"id="course">Java Script
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="doa">Date of Admission</label>
+                </td>
+                <td>
+                    <!-- <label for="year">Year</label>
+                    <select name="year" id="year">
+                        <option>Select Year</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                    </select> -->
+                    <label for="month">Month</label>
+                    <input type="month" id="month" name="month">
+                    <!-- <select name="month" id="month">
+                        <option>Select Month</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select> -->
+                        
+                    <label for="day">Day</label>
+                    <select name="day" id="day" aria-label="Select Day">
+                        <option>Select Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="message">Message</label>
+                </td>
+                <td>
+                    <textarea cols="45" rows="10" placeholder="Message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="Post">
+                    <input type="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

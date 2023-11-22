@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Click Event</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 300px;
+            margin: 10px auto;
+            border: 2px solid;
+            text-align: center;
+            font-size: x-large;
+            position: relative;
+        }
+
+        #btn1 {
+            color: white;
+            background-color: #008cff;
+            width: 100px;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: none;
+            width: 151px;
+            text-align: left;
+            position: absolute;
+            top: 120px;
+            left: 202px;
+            background-color: rgb(162, 218, 162);
+            box-shadow: 3px 3px 8px orange;
+        }
+
+        .dropdown a {
+            display: block;
+            text-decoration: none;
+            color: blueviolet;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #adacab;
+        }
+
+        #btn1:hover {
+            background-color: #0580e4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="box1">
+            <p id="message">To see the dropdown menu, click the button.</p>
+            <button onclick="myFunction()" id="btn1">Click me</button>
+            <div id="mydropdown" class="dropdown">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("mydropdown").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

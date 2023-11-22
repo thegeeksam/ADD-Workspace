@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <h2>HTML Forms</h2>
+
+    <form action="Result.html" method="get" target="_blank" enctype="multipart/form-data"> 
+        <!-- method="post"> -->
+        <div>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter Your Name" required>
+        </div>
+        <div>
+            <label>
+                Email:
+                <!-- <input type="text" id="email" name="email" value = "xyz@gmail.com"> -->
+                <input type="email" id="email" name="Email ID"  required>
+            </label>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="Age " min = "18"  max = "99" step = "5" required>
+        </div>
+        <div>
+            <label for="date">Birth Date:</label>
+            <input type="date" id="date" name="Date " min="2001-12-01" max="2022-01-31" step="5" required>
+            <!-- <input type="date" id="date" name="date" min="2001-12-01" max="2022-01-31" required> -->
+        </div>
+        <div>
+            <label for="pincode">Pincode:</label>
+            <input type="txt" id="pincode" name="Pincode" required minlength="6" maxlength="6">
+            <!-- <input type="number" id="pincode" name="pincode" required maxlength="6"> -->
+        </div>
+        <div>   
+            <label for="Password">Password:</label>
+            <!-- <input type="number" id="Password" name="Password"> -->
+            <input type="Password" id="Password" name="Password" required>
+        </div>
+        <div>
+            <fieldset>
+            <legend><b>Favourite Food:</b></legend>
+            <div>
+                <label for="pongal">Pongal</label>
+                <input type="checkbox" id="pongal" name="Pongal"> 
+            </div>
+            <div>
+                <label for="idly">Idly</label>
+                <input type="checkbox" id="idly" name="Idly">
+            </div>
+            <div>
+                <label for="dosa">Dosa</label>
+                <input type="checkbox" id="dosa" name="Idly">
+            </div>
+            <div>
+                <label for="vada">Vada</label>
+                <input type="checkbox" id="vada" name="Idly">
+            </div>
+            
+        </div>
+        <fieldset>
+            <legend>
+            <b>Gender:</b></legend>
+            <div>
+                <label for="male">  Male</label>
+                <!-- <input type="radio" name="male" id="name"> -->
+                <input type="radio" name="Gender" id="male">
+            </div>
+            
+            <div>
+                <label for="female"> Female</label>
+                <input type="radio" name="Gender" id="female">
+            </div>
+            </fieldset>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country" multiple>
+                <option value="India">India</option>
+                <option value="USA">Nepal</option>
+                <option value="UK">SriLanka</option>
+                <option value="Canada">Bhutan</option>
+            </select>   
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option selected disabled>--Select City--</option>
+                <optgroup label="Metros">
+                    <option>New Delhi</option>
+                    <option>Kolkata</option>
+                    <option>Mumbai</option>
+                    <option>Chennai</option>
+                    <option>Kathmandu</option>
+                </optgroup>
+                <optgroup label="Others">
+                    <option>Coimbatore</option>
+                    <option>Pollaci</option>
+                    <option>Udumalai</option>
+                    <option>Tiruppur</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea name="Address: " id="address" cols="30" rows="10" placeholder="Enter Your Address"></textarea>
+        </div>
+        <div>
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="File" accept=".pdf"> 
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <br>
+            <button type="submit">Submit</button>
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+    
+
+
+</body>
+
+</html>

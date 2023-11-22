@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form validation using HTML and JavaScript</title>
+    <link rel="stylesheet" href="MyStyle.css">
+</head>
+
+<body> 
+    <h1 style="text-align: center">REGISTRATION FORM</h1>
+    <form name="RegForm" onsubmit="return validateForm()" method = "get" enctype="multipart/form-data">
+        <!-- action="Result.html" target="_self" target="_blank" --> 
+        
+    <table cellspacing="2" cellpadding="2" border="1">
+        
+        <tr>
+            <td>
+                <label for="Name">Name</label>
+            </td>
+            <td>
+                <input type="text" size="50" name="Name" id="Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Address">Address:</label>
+            </td>
+            <td>
+                <input type="text" size="50" name="Address" id="Address" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="EMail">E-mail Address:</label>
+            </td>
+            <td>
+                <input type="text" size="50" name="EMail" id="EMail" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Password">Password:</label>
+            </td>
+            <td>
+                <input type="password" size="50" name="Password" id="Password" />
+            </td>
+        </tr>
+    <tr>
+        <td>
+            <label for="Telephone">Telephone:</label>
+        </td>
+        <td>
+            <input type="tel" size="65" name="Telephone" id="Telephone" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="Subject">Select Your Course:</label>
+        </td>
+        <td>
+            <select type="text" value="" name="Subject" id="Subject">
+                <option selected disabled>--Select Course--</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>CSE (AI-ML)</option>
+                <option>IT</option>
+                <option>ECE</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="Comment">Comments:</label>
+        </td>
+        <td>
+            <textarea cols="55" name="Comment" id="Comment"> </textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" value="Submit" name="Submit" />
+        </td>
+        <td>
+            <input type="reset" value="Reset" name="Reset"/>
+        </td>
+    </tr>
+    
+    
+    </form>
+    </body>
+    <script type="text/javascript" src="Validate.js"></script>
+</html>

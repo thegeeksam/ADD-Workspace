@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function showDetails() {
+            var condition = document.getElementById("condition").value;
+            var detailsField = document.getElementById("detailsField");
+
+            if (condition === "yes") {
+                detailsField.style.display = "block";
+            } else {
+                detailsField.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="condition">Do you have additional details to provide?</label>
+        <select id="condition" onchange="showDetails()">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+
+        <div id="detailsField" style="display: none;">
+            <label for="additionalDetails">Enter your additional details:</label>
+            <input type="text" id="additionalDetails" name="additionalDetails">
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

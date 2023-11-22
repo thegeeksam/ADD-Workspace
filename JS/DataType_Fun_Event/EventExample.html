@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Event_Example</title>
+</head>
+
+    <body>
+        <fieldset>
+        <legend><b>Alert Message</b></legend>
+        <button id="button1">Click me</button><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Background Color</b></legend>
+            <button id="click">Change Color</button><br>
+        </fieldset>
+        
+        <!-- <button id="undo">Undo Change Color</button> -->
+        <br>
+
+        <script>
+            document.getElementById("button1").addEventListener("click", myFunction);
+
+            function myFunction() {
+                alert("You clicked a button!")
+            }
+
+            document.getElementById("click").addEventListener("click", changeBackground);
+
+            function changeBackground(event) {
+                document.body.style.backgroundColor = 'red';
+                }
+                
+            document.getElementById("time").addEventListener("click", time);
+
+        </script>
+    
+    <fieldset>
+        <legend><b>Time</b></legend>
+        <button onclick="document.getElementById('time').innerHTML=Date()">Display Time</button>
+        <p id="time"></p>
+    </fieldset>
+    
+    </body>
+</html>

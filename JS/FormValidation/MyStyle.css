@@ -1,0 +1,14 @@
+div {
+    box-sizing: border-box;
+    width: 100%;
+    border: 100px solid blueviolet;
+    float: left;
+    align-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: aquamarine;
+    margin: 0 auto;
+    width: 600px;
+}

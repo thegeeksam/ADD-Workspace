@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Event Example</title>
+</head>
+
+<body>
+<div class="main">
+    <div class="box" id="box1">
+        <p id="message"></p>
+        <p>Enter name inside the input field</p>
+        <input type="text" id="input-field" placeholder=" Enter your name">
+    </div>
+</div>
+
+<script>
+    var input = document.getElementById("input-field");
+    input.onfocus = function () { myFunction() };
+    function myFunction() {
+        var box = document.getElementById("box1");
+        box.style.background = 'linear-gradient(45deg, pink, purple)';
+        box.style.color = 'white';
+        document.getElementById("message").innerHTML = "The Focus Event is triggered.";
+        input.style.height = '30px';
+        input.style.borderRadius = '5px';
+
+    }
+</script>
+</body>
+
+</html>
