@@ -1,1 +1,7 @@
 How are u, man?
+
+terminal.integrated.fontSize
+
+this is new update
+
+i have added new content
