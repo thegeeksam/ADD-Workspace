@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document Event Example</title>
+</head>
+
+<body>
+<body onload="checkCookies()">
+    <div class="main">
+        <div class="box">
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script>
+        function checkCookies() {
+            var text = "";
+            if (navigator.cookieEnabled == true) {
+                text = "Cookies are enabled.";
+            } else {
+                text = "Cookies are not enabled.";
+            }
+            document.getElementById("message").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Try...Catch..Finally..</title>
+    <link rel="stylesheet" href="MyStyle.css">
+</head>
+<body>
+    <script>
+        try {
+            let a = 2;
+            if (a == 2){
+                document.write("OK!");
+            }
+            else {
+                document.write(b);
+            }
+        }
+        catch (Error) {
+            document.write("Error found \"" + Error.message + "\"<br>");
+            document.write("Name of Error is \"" + Error.name + "\"<br>");
+        }
+        finally {
+            document.write("<br>This statement will be Executed!");
+        }  
+    </script>
+</body>
+
+</html>
