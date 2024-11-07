@@ -1,14 +1,14 @@
 body {
-    background-color: #7ac5cd;
+    background-color: aqua;
     text-align: center;
 }
 
-h2 {
+h1 {
     color: #006400;
 }
 
 p {
     color: #cd5c5c;
-    font-size: 25px;
+    font-size: 35px;
     font-style: italic;
 }

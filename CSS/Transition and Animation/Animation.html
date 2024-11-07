@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Animation</title>
+    <style>
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition-duration: 3s;
+        /* transition-property: background-color, width, height; */
+        transition-timing-function: linear;
+        /* transition-timing-function: cubic-bezier(1, -1.13, 0, 2.09); */
+        /* try: ease, ease-in, ease-in-out, step-end; */
+        /* try: inspect-> */
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+      }
+      .square:hover {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        transform-box: fill-box;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+    <div class="circle"></div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="MyStyle.css" />
+    <style>
+      body {
+        background-color: lightblue;
+        /* transition: color .05s; */
+        transition: background-color 5s linear;
+        /* , transform 5s ease; */
+      }
+      body:hover {
+        background-color: lightgreen;
+        /* transition: 5s; */
+
+        /* transform: scale(1.1); */
+      }
+      /* body:hover(:not(body)) {
+        background-color: lightyellow;
+        transition: 5s;
+      } */
+
+      h1 {
+        color: blueviolet;
+      }
+      h1:hover {
+        color: red;
+        transition: color 3s ease;
+        /* transform 3s ease; */
+        /* transition-delay: 5s; */
+      }
+      h1:not(:hover) {
+        /* background-color: lightyellow; */
+        transition: 5s;
+      }
+      .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <h1 style="color: blue; text-align: center"> -->
+    <h1>This is a heading</h1>
+    <p>
+      The style of this document is a combination of an external stylesheet,
+      internal style and inline style. The inline style will override.
+    </p>
+    <h1 style="color: blue; text-align: center">This is another heading</h1>
+    <img
+      class="img"
+      src="friends.jpg"
+      alt="Sample Image"
+      style="max-width: 100%; height: auto"
+    />
+  </body>
+</html>
