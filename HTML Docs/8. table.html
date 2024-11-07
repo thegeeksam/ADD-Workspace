@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table Tag</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid red;
+        border-collapse: separate;
+        /* border-collapse: collapse; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <table>-->
+    <!-- <table width="100%" style="float: left"> -->
+    <h1>Hello</h1>
+    <table width="50%" cellpadding="10" cellspacing="2">
+      <caption>
+        <h1>Student Role</h1>
+      </caption>
+
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Email Id</th>
+        <th>Class</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>NAGUL A</td>
+        <td>Frontend Developer</td>
+        <td>nagul.a2024cse@sece.ac.in</td>
+        <td rowspan="2" align="left">1st</td>
+        <td align="center">88</td>
+      </tr>
+      <tr>
+        <td>OMBABU CHAURASIYA</td>
+        <td>Backend Developer</td>
+        <td>ombabuchaurasiya.2024cse@sece.ac.in</td>
+        <td align="center">78</td>
+      </tr>
+      <tr>
+        <td colspan="4" align="right"><strong> Total</strong></td>
+        <td align="center">166</td>
+      </tr>
+    </table>
+  </body>
+</html>
